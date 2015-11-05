@@ -40,6 +40,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{829c5797-ca5b-4fcf-8cc2-c19daa4a821a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts\Contracts.csproj">
+      <Project>{bbdf28c1-59cf-4f25-8f50-b204c6eb3e75}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataContracts\DataContracts.csproj">
+      <Project>{b3d1af9d-b3da-4c62-a706-88050a2e2ef5}</Project>
+      <Name>DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityResolver\UnityResolver.csproj">
+      <Project>{3ceafb28-ba1a-4072-8039-b098a0c6bedc}</Project>
+      <Name>UnityResolver</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

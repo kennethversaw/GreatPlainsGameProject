@@ -11,9 +11,12 @@ namespace DataContracts
     [DataContract]
     public class Registration
     {
-
         [DataMember]
         public RegistrationType RegistrationType { get; set; }
 
+        
+       [DataMember]
+       public virtual ICollection<Attendee> Attendees { get; set;}
+        
     }
 }

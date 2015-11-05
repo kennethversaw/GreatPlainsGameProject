@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataContracts;
 
 namespace Contracts
 {
-    class IRegistrationAccessor
+    public interface IRegistrationAccessor
     {
+        Registration AddRegistration(UserContext userContext, Registration registration);
     }
 }
