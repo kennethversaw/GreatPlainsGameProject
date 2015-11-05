@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>10969254-d1d3-4074-890e-9e481e388d09</ProjectGuid>
+    <ProjectGuid>{EA06B7F9-52E1-42B4-B4DC-26C532586827}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DBSeeder</RootNamespace>
