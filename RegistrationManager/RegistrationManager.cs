@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Contracts;
 using DataContracts;
 using UnityResolver;
+
 namespace RegistrationManager
 {
     public class RegistrationManager : IRegistrationManager

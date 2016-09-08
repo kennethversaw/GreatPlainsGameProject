@@ -228,7 +228,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Registration\Create.cshtml" />
     <Content Include="Views\Registration\Index.cshtml" />
+    <Content Include="Unity.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -239,6 +241,36 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{829c5797-ca5b-4fcf-8cc2-c19daa4a821a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts\Contracts.csproj">
+      <Project>{bbdf28c1-59cf-4f25-8f50-b204c6eb3e75}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessor\DataAccessor.csproj">
+      <Project>{21348d8a-6654-4f98-b3c2-1ab004e94a6a}</Project>
+      <Name>DataAccessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataContracts\DataContracts.csproj">
+      <Project>{b3d1af9d-b3da-4c62-a706-88050a2e2ef5}</Project>
+      <Name>DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationEngine\RegistrationEngine.csproj">
+      <Project>{38d647c9-7df7-4259-82b5-feb723ff6abc}</Project>
+      <Name>RegistrationEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationManager\RegistrationManager.csproj">
+      <Project>{9d67063c-be83-4738-a1cc-26bd19cb9d97}</Project>
+      <Name>RegistrationManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityResolver\UnityResolver.csproj">
+      <Project>{3ceafb28-ba1a-4072-8039-b098a0c6bedc}</Project>
+      <Name>UnityResolver</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
