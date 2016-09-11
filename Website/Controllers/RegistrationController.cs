@@ -15,13 +15,16 @@ namespace Website.Controllers
         // GET: Registration
         public ActionResult Index()
         {
-            return View();
+            List<Attendee> attendees = new List<Attendee>();
+            UserContext uc = new UserContext();
+            uc.ConnectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            attendees = UnityCache.ResolveDefault<IRegistrationManager>().GetAllAttendees(uc).ToList();
+            return View(attendees);
         }
 
         public ActionResult Create()
         {
             return View();
-
         }
 
         [HttpPost]
@@ -32,7 +35,7 @@ namespace Website.Controllers
             IRegistrationManager regManager = UnityCache.ResolveDefault<IRegistrationManager>();
             UserContext uc = new UserContext();
             uc.ConnectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-            Registration reg = regManager.ProcessRegistration(uc, attendees);
+            regManager.ProcessRegistration(uc, attendees);
             return View();
         }
     }

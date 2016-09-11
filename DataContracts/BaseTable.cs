@@ -19,7 +19,8 @@ namespace DataContracts
         private DbStatus _status = DbStatus.Active;
 
         [DataMember]
-        public DateTime CreateDate { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime CreatedDate { get; set; }
 
         [DataMember]
         public string CreatedBy { get; set; }

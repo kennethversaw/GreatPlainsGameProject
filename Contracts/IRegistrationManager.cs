@@ -9,6 +9,7 @@ namespace Contracts
 {
     public interface IRegistrationManager
     {
-        Registration ProcessRegistration(UserContext userContext, ICollection<Attendee> attendees);
+        void ProcessRegistration(UserContext userContext, ICollection<Attendee> attendees);
+        ICollection<Attendee> GetAllAttendees(UserContext uc);
     }
 }
